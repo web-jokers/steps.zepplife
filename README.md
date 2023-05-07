@@ -2,6 +2,12 @@
 
 刷步数使用的程序（基于一起步数网页）
 
+## 零、实现原理
+
+基于zeep life接口修改，入口使用[17bushu](https://www.17bushu.com/)，前置准备请参考[前置准备指导](https://www.shuabushu.cc/)
+
+核心前置步骤：`下载` -> `注册/登录` -> `绑定支付宝/微信`
+
 ## 一、下载
 
 在[releases](https://github.com/ns-cn/istep/releases)中下载对应操作系统的最新版本

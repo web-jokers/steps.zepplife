@@ -1,4 +1,4 @@
-module ibushu
+module istep
 
 go 1.20
 

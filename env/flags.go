@@ -3,5 +3,5 @@ package env
 import "github.com/ns-cn/goter"
 
 var (
-	CfgFile = goter.NewCmdFlagString("ibushu.json", "load", "l", "config file")
+	CfgFile = goter.NewCmdFlagString("istep.json", "load", "l", "config file")
 )

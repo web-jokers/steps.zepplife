@@ -1,4 +1,4 @@
-# ibushu
+# istep
 
 刷步数使用的程序（基于一起步数网页）
 
@@ -6,9 +6,9 @@
 
 
 
-## 一、配置方法
+## 二、配置方法
 
-按照默认的`ibushu.json`配置文件，修改`username`和`password`为自己的账号密码，及需要修改的步数的最大最小值
+按照默认的`istep.json`配置文件，修改`username`和`password`为自己的账号密码，及需要修改的步数的最大最小值
 
 ```json
 {
@@ -40,21 +40,22 @@
 | min        | 最小步数                   |
 | max        | 最大步数                   |
 
-## 二、运行
+## 三、运行
 
 ```shell
-ibushu                # 使用默认的配置文件
-ibushu -l other.json  # 读取其他配置文件
+istep                # 使用默认的配置文件
+istep -l other.json  # 读取其他配置文件
 ```
 
-## 三、帮助文档
+## 四、帮助文档
 
 ```shell
+> istep -h
 基于zeep life修改步数的程序
 
 Usage:
-  ibushu [flags]
-  ibushu [command]
+  istep [flags]
+  istep [command]
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
@@ -62,8 +63,8 @@ Available Commands:
   version     打印当前版本号
 
 Flags:
-  -h, --help          help for ibushu
-  -l, --load string   config file (default "ibushu.json")
+  -h, --help          help for istep
+  -l, --load string   config file (default "istep.json")
 
-Use "ibushu [command] --help" for more information about a command.
+Use "istep [command] --help" for more information about a command.
 ```

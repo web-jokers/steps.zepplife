@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/ns-cn/goter"
 	"github.com/spf13/cobra"
-	"ibushu/env"
+	"istep/env"
 	"math/rand"
 	"os"
 	"sync"
@@ -17,8 +17,8 @@ var configuration = new(Configuration)
 var wg = sync.WaitGroup{}
 
 func main() {
-	root := goter.NewRootCmdWithAction("ibushu", "基于zeep life修改步数的程序", "1.0", func(command *cobra.Command, strings []string) {
-		fmt.Printf("【ibushu】%v读取配置文件%s\n", time.Now(), env.CfgFile.Value)
+	root := goter.NewRootCmdWithAction("istep", "基于zeep life修改步数的程序", "1.0", func(command *cobra.Command, strings []string) {
+		fmt.Printf("【istep】%v读取配置文件%s\n", time.Now(), env.CfgFile.Value)
 		// 读取配置文件
 		data, err := os.ReadFile(env.CfgFile.Value)
 		if err != nil {

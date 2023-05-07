@@ -1,6 +1,6 @@
 package env
 
-const VERSION = "1.2023.0507.001"
+const VERSION = "1.023.0507.001"
 
 // 1.2023.0507.001
 /*

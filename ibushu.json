@@ -1,0 +1,15 @@
+{
+  "showClient": false,
+  "users": [
+    {
+      "user": "18716524101",
+      "password": "cEBzc3cwcmQ=",
+      "encoded": true,
+      "ignore": false,
+      "steps": {
+        "min": 30000,
+        "max": 30000
+      }
+    }
+  ]
+}

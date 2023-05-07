@@ -4,6 +4,8 @@
 
 ## 一、下载
 
+在[releases](https://github.com/ns-cn/istep/releases)中下载对应操作系统的最新版本
+
 ## 二、配置方法
 
 按照默认的`istep.json`配置文件，修改`username`和`password`为自己的账号密码，及需要修改的步数的最大最小值

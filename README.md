@@ -4,7 +4,7 @@
 
 ## 零、实现原理
 
-基于zeep life接口修改，入口使用[17bushu](https://www.17bushu.com/)，前置准备请参考[前置准备指导](https://www.shuabushu.cc/)
+基于zeep life接口修改，入口使用[17bushu](https://www.17bushu.com/)
 
 核心前置步骤：`下载` -> `注册/登录` -> `绑定支付宝/微信`
 

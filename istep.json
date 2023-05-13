@@ -7,8 +7,8 @@
       "encoded": true,
       "ignore": false,
       "steps": {
-        "min": 30000,
-        "max": 30000
+        "min": 66666,
+        "max": 66666
       }
     }
   ]

@@ -4,12 +4,11 @@ import (
 	"context"
 	"fmt"
 	"github.com/chromedp/chromedp"
+	"istep/env"
 	"log"
 	"strconv"
 	"time"
 )
-
-const url = "https://www.17bushu.com/"
 
 func Client(keeper chan int, commands chan ChangeCommand, showClient bool) {
 	keeper <- 1
@@ -34,7 +33,7 @@ func Client(keeper chan int, commands chan ChangeCommand, showClient bool) {
 	// 访问网站并等待页面加载完成
 	if err := chromedp.Run(ctx,
 		//chromedp.Emulate(device.IPadPro11),
-		chromedp.Navigate(url),
+		chromedp.Navigate(env.CfgHost.Value),
 		chromedp.WaitVisible("submitBtn", chromedp.ByID),
 	); err != nil {
 		log.Fatal(err)
@@ -57,7 +56,7 @@ func changeStepNumber(ctx context.Context, cmd ChangeCommand) {
 	}()
 	fmt.Printf("【修改步数任务】: 为%s修改步数为%d", cmd.UserID, cmd.StepNumber)
 	err := chromedp.Run(ctx,
-		chromedp.Navigate(url),
+		chromedp.Navigate(env.CfgHost.Value),
 		chromedp.WaitVisible("submitBtn", chromedp.ByID),
 		chromedp.SendKeys("#phone", cmd.UserID),
 		chromedp.SendKeys("#password", cmd.Password, chromedp.ByID),

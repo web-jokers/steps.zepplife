@@ -51,6 +51,6 @@ func main() {
 		}
 		wg.Wait()
 	})
-	root.Bind(&env.CfgFile)
+	root.Bind(&env.CfgFile, &env.CfgHost)
 	_ = root.Execute()
 }

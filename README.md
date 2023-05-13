@@ -4,7 +4,7 @@
 
 ## 零、实现原理
 
-基于zeep life接口修改，入口使用[17bushu](https://www.17bushu.com/)
+基于zepp life接口修改，入口使用[17bushu](https://www.17bushu.com/)
 
 核心前置步骤：`下载zeep life` -> `注册/登录` -> `绑定支付宝/微信`
 
@@ -57,7 +57,7 @@ istep -l other.json  # 读取其他配置文件
 
 ```shell
 > istep -h
-基于zeep life修改步数的程序
+基于zepp life修改步数的程序
 
 Usage:
   istep [flags]

@@ -17,7 +17,7 @@ var configuration = new(Configuration)
 var wg = sync.WaitGroup{}
 
 func main() {
-	root := goter.NewRootCmdWithAction("istep", "基于zeep life修改步数的程序", env.VERSION, func(command *cobra.Command, strings []string) {
+	root := goter.NewRootCmdWithAction("istep", "基于zepp life修改步数的程序", env.VERSION, func(command *cobra.Command, strings []string) {
 		fmt.Printf("【istep】%v读取配置文件%s\n", time.Now(), env.CfgFile.Value)
 		// 读取配置文件
 		data, err := os.ReadFile(env.CfgFile.Value)

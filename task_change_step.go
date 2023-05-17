@@ -46,7 +46,7 @@ func Client(keeper chan int, commands chan ChangeCommand, showClient bool) {
 	}()
 	for {
 		cmd := <-commands
-		changeStepNumber(ctx, cmd)
+		changeStepNumberWithApi(cmd)
 	}
 }
 

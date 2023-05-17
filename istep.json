@@ -5,10 +5,20 @@
       "user": "18716524101",
       "password": "cEBzc3cwcmQ=",
       "encoded": true,
+      "ignore": true,
+      "steps": {
+        "min": 22222,
+        "max": 22222
+      }
+    },
+    {
+      "user": "13251374719",
+      "password": "emhhbmdydWljaGVuZzEyMw==",
+      "encoded": true,
       "ignore": false,
       "steps": {
-        "min": 66666,
-        "max": 66666
+        "min": 30000,
+        "max": 50000
       }
     }
   ]

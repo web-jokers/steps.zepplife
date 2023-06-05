@@ -19,6 +19,12 @@ var wg = sync.WaitGroup{}
 func main() {
 	root := goter.NewRootCmdWithAction("istep", "基于zepp life修改步数的程序", env.VERSION, func(command *cobra.Command, strings []string) {
 		fmt.Printf("【istep】%v读取配置文件%s\n", time.Now(), env.CfgFile.Value)
+		way := env.CfgWay.Value
+		if way != env.COM_17BUSHU && way != env.COM_SHUABU && way != env.API {
+			fmt.Println("不被支持的方式")
+			_ = command.Help()
+			return
+		}
 		// 读取配置文件
 		data, err := os.ReadFile(env.CfgFile.Value)
 		if err != nil {
@@ -51,6 +57,6 @@ func main() {
 		}
 		wg.Wait()
 	})
-	root.Bind(&env.CfgFile, &env.CfgHost)
+	root.Bind(&env.CfgFile, &env.Cfg17BushuHost, &env.CfgShuabuHost, &env.CfgWay)
 	_ = root.Execute()
 }

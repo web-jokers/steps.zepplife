@@ -69,8 +69,11 @@ Available Commands:
   version     打印当前版本号
 
 Flags:
-  -h, --help          help for istep
-  -l, --load string   config file (default "istep.json")
+  -H, --17bushu-host string   使用17bushu方式时配置的服务器 (default "http://118.195.237.33/")
+  -h, --help                  help for istep
+  -l, --load string           加载的json配置文件 (default "istep.json")
+  -S, --shuabu-host string    使用shuabu方式时配置的服务器 (default "https://shuabu.org/")
+  -W, --way string            指定使用的方式，支持（17bushu、shuabu、api）三种方式 (default "17bushu")
 
 Use "istep [command] --help" for more information about a command.
 ```
